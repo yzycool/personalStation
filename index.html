@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>coolfish</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      .box {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        color: #fff;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+        /* 要求用1200px，用100%会更好看 */
+        width: 1200px;
+        margin: 0 auto;
+      }
+      .header {
+        width: 100%;
+        background-image: url('./img/04.png');
+        background-size: cover;
+        height: 220px;
+        padding: 12px 0 20px;
+      }
+      .pointer {
+        cursor: pointer;
+      }
+      .my-short-cut-box {
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+        margin: auto;
+      }
+      .my-short-cut-title {
+        color: #fff;
+        font-size: 16px;
+      }
+      .my-short-cut-title-box {
+        display: flex;
+        color: #fff;
+        font-size: 12px;
+      }
+      .my-short-cut-text {
+        margin: 0 12px;
+        cursor: pointer;
+      }
+      .header-img-box {
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 20px auto 12px;
+        border: 3px solid #fff;
+      }
+      .header-my-name {
+        font-size: 30px;
+        text-align: center;
+      }
+      .header-my-job {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 12px;
+      }
+      .container {
+        flex: 1;
+        background: #fff;
+        height: 100%;
+        width: 100%;
+        padding-top: 40px;
+      }
+      .my-info-box {
+        margin: 10px auto;
+        width: 70%;
+      }
+      .my-info-title {
+        font-size: 12px;
+        font-weight: 600;
+        color: #000;
+        text-shadow: none;
+        margin: 14px 0;
+      }
+      .my-info-show-list {
+        display: flex;
+        justify-content: space-between;
+      }
+      .my-info-card {
+        min-width: 150px;
+        height: 100px;
+        margin-right: 10px;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+      }
+      .my-info-card-title {
+        position: absolute;
+        color: #fff;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+        font-size: 13px;
+        bottom: 6px;
+        right: 6px;
+      }
+      .bottom {
+        width: 100%;
+        background: #292929;
+        text-align: center;
+      }
+      .bottom-box {
+        width: 70%;
+        margin: auto;
+      }
+      .bottom-info-box {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin-top: 20px;
+        height: 60px;
+      }
+      .bottom-info-item {
+        margin: 0 20px;
+        display: flex;
+        line-height: 22px;
+        height: 22px;
+        font-size: 12px;
+        cursor: pointer;
+      }
+      .bottom-info-item img {
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        margin-right: 6px;
+      }
+      .bottom-date {
+        font-size: 12px;
+        color: #fff;
+        line-height: 40px;
+        border-top: 0.5px solid #555;
+      }
+      .my-info-card img {
+        width: 100%;
+        height: 100%;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <header class="header">
+        <div class="my-short-cut-box">
+          <div class="my-short-cut-title">My Website</div>
+          <div class="my-short-cut-title-box">
+            <div class="my-short-cut-text technologyStack">技术栈</div>
+            <div class="my-short-cut-text happyAvocation">业余爱好</div>
+            <div class="my-short-cut-text technologyStack">关于</div>
+          </div>
+        </div>
+        <div class="header-img-box pointer">
+          <img src="./img/01.png" alt="coolfish" />
+        </div>
+        <div class="header-my-name pointer">coolFish</div>
+        <div class="header-my-job">前端工程师</div>
+      </header>
+      <main class="container">
+        <div class="my-info-box">
+          <div class="my-info-title">我的技术栈</div>
+          <div class="my-info-show-list">
+            <div class="my-info-card" id="javaScriptLink">
+              <img src="./img/01.png" class="123" alt="JavaScript" />
+              <div class="my-info-card-title">JavaScript</div>
+            </div>
+            <div class="my-info-card">
+              <img src="./img/01.png" alt="游戏" />
+              <div class="my-info-card-title">游戏</div>
+            </div>
+            <div class="my-info-card">
+              <img src="./img/01.png" alt="游戏" />
+              <div class="my-info-card-title">游戏</div>
+            </div>
+            <div class="my-info-card">
+              <img src="./img/01.png" alt="游戏" />
+              <div class="my-info-card-title">游戏</div>
+            </div>
+          </div>
+        </div>
+        <div class="my-info-box">
+          <div class="my-info-title">我的业余爱好</div>
+          <div class="my-info-show-list">
+            <div class="my-info-card">
+              <img src="./img/01.png" alt="游戏" />
+              <div class="my-info-card-title">游戏</div>
+            </div>
+            <div class="my-info-card">
+              <img src="./img/01.png" alt="游戏" />
+              <div class="my-info-card-title">游戏</div>
+            </div>
+            <div class="my-info-card">
+              <img src="./img/01.png" alt="游戏" />
+              <div class="my-info-card-title">游戏</div>
+            </div>
+            <div class="my-info-card">
+              <img src="./img/01.png" alt="游戏" />
+              <div class="my-info-card-title">游戏</div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="bottom">
+        <div class="bottom-box">
+          <div class="bottom-info-box">
+            <div class="bottom-info-item">
+              <img src="./img/svg/github-fill.svg" alt="" />
+              <div>github</div>
+            </div>
+            <div class="bottom-info-item">
+              <img src="./img/svg/mayun.svg" alt="" />
+              <div>gitee</div>
+            </div>
+            <div class="bottom-info-item">
+              <img src="./img/svg/tubiao.svg" alt="" />
+              <div>iconfont</div>
+            </div>
+          </div>
+          <div class="bottom-date">有效日期：2034-4-1</div>
+        </div>
+      </footer>
+    </div>
+    <script>
+      let githubLink = 'https://github.com/yzycool/personalStation'
+      let technologyStack = 'https://juejin.cn/user/1292681406843214/posts'
+      let happyAvocation = 'https://steamcommunity.com/sharedfiles/filedetails/?id=3142318909'
+      let javaScriptLink = 'https://developer.mozilla.org/zh-CN/docs/Web/JavaScript'
+      let vueLink = 'https://vuejs.org/'
+      let reactLink = 'https://react.dev/'
+      let basketballLink = 'https://baike.baidu.com/item/%E7%AF%AE%E7%90%83/123564'
+      let pingPangBallLink = 'https://baike.baidu.com/item/%E4%B9%92%E4%B9%93%E7%90%83/221415'
+      let LOLLink = 'https://lol.qq.com/tft/#/index'
+      let maYunLink = 'https://gitee.com/'
+      let iconFontLink = 'https://www.iconfont.cn/?spm=a313x.search_index.i3.2.140e3a81AXCWiQ'
+      let linkObj = {
+        technologyStack: 'https://juejin.cn/user/1292681406843214/posts',
+        githubLink: 'https://github.com/yzycool/personalStation',
+        happyAvocation: 'https://steamcommunity.com/sharedfiles/filedetails/?id=3142318909',
+        javaScriptLink: 'https://developer.mozilla.org/zh-CN/docs/Web/JavaScript',
+        vueLink: 'https://vuejs.org/',
+        reactLink: 'https://react.dev/',
+        basketballLink: 'https://baike.baidu.com/item/%E7%AF%AE%E7%90%83/123564',
+        pingPangBallLink: 'https://baike.baidu.com/item/%E4%B9%92%E4%B9%93%E7%90%83/221415',
+        LOLLink: 'https://lol.qq.com/tft/#/index',
+        maYunLink: 'https://gitee.com/',
+        iconFontLink: 'https://www.iconfont.cn/?spm=a313x.search_index.i3.2.140e3a81AXCWiQ',
+      }
+      document.addEventListener('click', function (event) {
+        // 获取点击元素的类列表
+        var classList = event.target.classList
+        // 确保类列表不为空
+        if (classList.length > 0) {
+          // 获取最后一个类名
+          var lastClassName = classList.item(classList.length - 1)
+          if (linkObj[lastClassName]) {
+            go(linkObj[lastClassName])
+          }
+        } else {
+          console.log('该元素没有类名。')
+        }
+      })
+      function go(targetName) {
+        console.log('跳转的页面：', targetName)
+        window.location.href = targetName
+      }
+    </script>
+  </body>
+</html>
