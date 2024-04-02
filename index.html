@@ -15,8 +15,8 @@
         min-height: 100vh;
         color: #fff;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
-        /* 要求用1200px，用100%会更好看 */
-        width: 1200px;
+        /* 要求用1200px，不固定会更好看 */
+        /* width: 1200px; */
         margin: 0 auto;
       }
       .header {
@@ -67,7 +67,7 @@
       }
       .container {
         flex: 1;
-        background: #fff;
+        background: #f6f7ff;
         height: 100%;
         width: 100%;
         padding-top: 40px;
@@ -167,21 +167,21 @@
         <div class="my-info-box">
           <div class="my-info-title">我的技术栈</div>
           <div class="my-info-show-list">
-            <div class="my-info-card" id="javaScriptLink">
-              <img src="./img/01.png" class="123" alt="JavaScript" />
-              <div class="my-info-card-title">JavaScript</div>
+            <div class="my-info-card">
+              <img src="./img/01.png" class="javaScriptLink" alt="JavaScript" />
+              <div class="my-info-card-title javaScriptLink">JavaScript</div>
             </div>
             <div class="my-info-card">
-              <img src="./img/01.png" alt="游戏" />
-              <div class="my-info-card-title">游戏</div>
+              <img src="./img/01.png" class="vueLink" alt="Vue" />
+              <div class="my-info-card-title vueLink">Vue</div>
             </div>
             <div class="my-info-card">
-              <img src="./img/01.png" alt="游戏" />
-              <div class="my-info-card-title">游戏</div>
+              <img src="./img/01.png" class="reactLink" alt="React" />
+              <div class="my-info-card-title reactLink">React</div>
             </div>
             <div class="my-info-card">
-              <img src="./img/01.png" alt="游戏" />
-              <div class="my-info-card-title">游戏</div>
+              <img src="./img/01.png" class="otherMethodLink" alt="其他" />
+              <div class="my-info-card-title otherMethodLink">其他</div>
             </div>
           </div>
         </div>
@@ -189,20 +189,20 @@
           <div class="my-info-title">我的业余爱好</div>
           <div class="my-info-show-list">
             <div class="my-info-card">
-              <img src="./img/01.png" alt="游戏" />
-              <div class="my-info-card-title">游戏</div>
+              <img src="./img/01.png" class="basketballLink" alt="篮球" />
+              <div class="my-info-card-title basketballLink">篮球</div>
             </div>
             <div class="my-info-card">
-              <img src="./img/01.png" alt="游戏" />
-              <div class="my-info-card-title">游戏</div>
+              <img src="./img/01.png" class="javaScriptLink pingPangBallLink" alt="乒乓球" />
+              <div class="my-info-card-title pingPangBallLink">乒乓球</div>
             </div>
             <div class="my-info-card">
-              <img src="./img/01.png" alt="游戏" />
-              <div class="my-info-card-title">游戏</div>
+              <img src="./img/01.png" class="LOLLink" alt="英雄联盟" />
+              <div class="my-info-card-title LOLLink">英雄联盟</div>
             </div>
             <div class="my-info-card">
-              <img src="./img/01.png" alt="游戏" />
-              <div class="my-info-card-title">游戏</div>
+              <img src="./img/01.png" class="happyAvocation" alt="其他" />
+              <div class="my-info-card-title happyAvocation">其他</div>
             </div>
           </div>
         </div>
@@ -211,16 +211,16 @@
         <div class="bottom-box">
           <div class="bottom-info-box">
             <div class="bottom-info-item">
-              <img src="./img/svg/github-fill.svg" alt="" />
-              <div>github</div>
+              <img src="./img/svg/github-fill.svg" class="githubLink" alt="github" />
+              <div class="githubLink">github</div>
             </div>
             <div class="bottom-info-item">
-              <img src="./img/svg/mayun.svg" alt="" />
-              <div>gitee</div>
+              <img src="./img/svg/mayun.svg" class="maYunLink" alt="gitee" />
+              <div class="maYunLink">gitee</div>
             </div>
             <div class="bottom-info-item">
-              <img src="./img/svg/tubiao.svg" alt="" />
-              <div>iconfont</div>
+              <img src="./img/svg/tubiao.svg" class="iconFontLink" alt="iconfont" />
+              <div class="iconFontLink">iconfont</div>
             </div>
           </div>
           <div class="bottom-date">有效日期：2034-4-1</div>
@@ -228,17 +228,6 @@
       </footer>
     </div>
     <script>
-      let githubLink = 'https://github.com/yzycool/personalStation'
-      let technologyStack = 'https://juejin.cn/user/1292681406843214/posts'
-      let happyAvocation = 'https://steamcommunity.com/sharedfiles/filedetails/?id=3142318909'
-      let javaScriptLink = 'https://developer.mozilla.org/zh-CN/docs/Web/JavaScript'
-      let vueLink = 'https://vuejs.org/'
-      let reactLink = 'https://react.dev/'
-      let basketballLink = 'https://baike.baidu.com/item/%E7%AF%AE%E7%90%83/123564'
-      let pingPangBallLink = 'https://baike.baidu.com/item/%E4%B9%92%E4%B9%93%E7%90%83/221415'
-      let LOLLink = 'https://lol.qq.com/tft/#/index'
-      let maYunLink = 'https://gitee.com/'
-      let iconFontLink = 'https://www.iconfont.cn/?spm=a313x.search_index.i3.2.140e3a81AXCWiQ'
       let linkObj = {
         technologyStack: 'https://juejin.cn/user/1292681406843214/posts',
         githubLink: 'https://github.com/yzycool/personalStation',
@@ -246,6 +235,7 @@
         javaScriptLink: 'https://developer.mozilla.org/zh-CN/docs/Web/JavaScript',
         vueLink: 'https://vuejs.org/',
         reactLink: 'https://react.dev/',
+        otherMethodLink: 'https://developer.mozilla.org/zh-CN/',
         basketballLink: 'https://baike.baidu.com/item/%E7%AF%AE%E7%90%83/123564',
         pingPangBallLink: 'https://baike.baidu.com/item/%E4%B9%92%E4%B9%93%E7%90%83/221415',
         LOLLink: 'https://lol.qq.com/tft/#/index',
@@ -255,9 +245,8 @@
       document.addEventListener('click', function (event) {
         // 获取点击元素的类列表
         var classList = event.target.classList
-        // 确保类列表不为空
+        console.log('event.target', event, event.target)
         if (classList.length > 0) {
-          // 获取最后一个类名
           var lastClassName = classList.item(classList.length - 1)
           if (linkObj[lastClassName]) {
             go(linkObj[lastClassName])
